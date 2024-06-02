@@ -6,6 +6,8 @@ html{
     scroll-behavior: smooth;
 }
 
+
+
 /* reset semua pengaturan supaya pembuatan border yang lain tidak terpengaru */
 *{
     margin: 0;
@@ -13,6 +15,8 @@ html{
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+
+
 
 /* CSS navigation */
 a{
@@ -93,6 +97,7 @@ nav button#menuButton{
 /* end of navigation CSS */
 
 
+
 /* CSS home atau halaman utama website */
 h5{
     font-size: 20px;
@@ -153,6 +158,9 @@ button a:hover{
 }
 /* end of home CSS */
 
+
+
+/* Skill CSS */
 .skill-section {
     text-align: center;
 }
@@ -227,7 +235,89 @@ button a:hover{
         max-width: 90%;
     }
 }
+/* end of Skill CSS */
 
+
+
+/* Certificate CSS */
+.certificate{
+    background-color: #f6f7fc;
+    padding: 110px 85px;
+}
+
+.certificate .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.certificate .header button{
+    background-color: #FEDE3E;
+    padding: 10px 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 8px;
+    border: none;
+    border-radius: 10px;
+}
+
+.certificate .header button i{
+    font-size: 26px;
+}
+
+.certificate .certificate-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.certificate .certificate-items .item{
+    width: 30%;
+    background-color: #fff;
+    border-radius: 10px;
+    border-bottom: 4px solid transparent;
+    cursor: pointer;
+    box-shadow: 0 5px 32px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.certificate .certificate-items .item:hover{
+    border-color: #FEDE3E;
+}
+
+.certificate .certificate-items .item img{
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px 10px 20px 20px;
+}
+
+.certificate .certificate-items .item .info{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 20px 32px 42px;
+}
+
+.certificate .certificate-items .item .info p{
+    font-size: 13px;
+}
+
+.certificate .certificate-items .item .info a{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: #FEDE3E;
+}
+
+.certificate .certificate-items .item .info a i{
+    margin-left: 2px;
+    font-size: 16px;
+}
+/* end Certificate CSS */
 
 
 
