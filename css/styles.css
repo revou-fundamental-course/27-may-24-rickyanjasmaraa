@@ -93,8 +93,7 @@ nav button#menuButton{
 /* end of navigation CSS */
 
 
-/* CSS main atau halaman utama website */
-
+/* CSS home atau halaman utama website */
 h5{
     font-size: 20px;
 }
@@ -151,6 +150,9 @@ button a:hover{
 .main .right img{
     width: 500px;
 }
+/* end of home CSS */
+
+
 
 
 
