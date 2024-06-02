@@ -17,12 +17,12 @@ html{
 /* CSS navigation */
 a{
     text-decoration: none;
-    color: #1c1e53;
+    color: #333;
     transition: color 0.3s ease;
 }
 
 a:hover{
-    color: #5e3bee !important;
+    color: #FEDE3E !important;
 }
 
 
@@ -78,8 +78,8 @@ nav button{
 }
 
 nav button:hover{
-    background-color: #5e3bee;
-    border-color: #5e3bee;
+    background-color: #FEDE3E;
+    border-color: #FEDE3E;
     color: #fff;
 }
 
@@ -107,8 +107,8 @@ button a:hover{
 }
 
 .main{
-    background-color: #deebee;
-    padding: 90px 85px;
+    background-color: #f6f7fc;
+    padding: 50px 85px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -128,7 +128,8 @@ button a:hover{
 }
 
 .main .left h3 span{
-    color: #5e3bee;
+    color: #FEDE3E;
+    stroke: black;
 }
 
 .main .left p{
@@ -141,7 +142,7 @@ button a:hover{
     margin-top: 40px;
     color: #fff;
     cursor: pointer;
-    background-color: #5e3bee;
+    background-color: #FEDE3E;
     padding: 14px 24px;
     border: 1px solid transparent;
     border-radius: 5px;
@@ -151,6 +152,88 @@ button a:hover{
     width: 500px;
 }
 /* end of home CSS */
+
+.skill-section {
+    text-align: center;
+}
+
+.skill-section h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.skill-section span {
+    color: #333;
+}
+
+.skill-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4em;
+}
+
+.skill-box {
+    background-color: #deebee;
+    width: 40%;
+    border-radius: 10px;
+    padding: 32px;
+    border-bottom: 4px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.skill-box:hover{ 
+    border-color: #FEDE3E;
+}
+
+.skill-box h3 {
+    margin-bottom: 1em;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.skill i {
+    font-size: 2em;
+    margin-right: 1em;
+    color: #333;
+}
+
+.skill div {
+    text-align: left;
+}
+
+.skill h4 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.skill p {
+    margin: 0;
+    color: #777;
+}
+
+@media (max-width: 768px) {
+    .skill-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-box {
+        max-width: 90%;
+    }
+}
+
+
+
+
+
+
+
 
 
 
