@@ -8,6 +8,7 @@ html{
 
 
 
+
 /* reset semua pengaturan supaya pembuatan border yang lain tidak terpengaru */
 *{
     margin: 0;
@@ -15,6 +16,7 @@ html{
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+
 
 
 
@@ -98,9 +100,10 @@ nav button#menuButton{
 
 
 
-/* CSS home atau halaman utama website */
+
+/* CSS Home */
 h5{
-    font-size: 20px;
+    font-size: 40px;
 }
 
 button a{
@@ -134,7 +137,7 @@ button a:hover{
 
 .main .left h3 span{
     color: #FEDE3E;
-    stroke: black;
+    background-color: black;
 }
 
 .main .left p{
@@ -160,6 +163,128 @@ button a:hover{
 
 
 
+
+/* CSS About */
+.about{
+    padding: 50px 85px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.about .left{
+    background-color: #FEDE3E;
+    border-radius: 10px 10px 0 0;
+}
+
+.about .left img{
+    width: 440px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.about .right p{
+    font-size: 16px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+/* enf of CSS About */
+
+
+
+
+/* Experience CSS */
+.experience-section {
+    padding: 50px 85px;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #f6f7fc;
+}
+
+.experience-section h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.experience-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.experience-item {
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+}
+
+.experience-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.experience-item h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.experience-item p {
+    font-size: 0.7em;
+    margin-bottom: 10px;
+}
+
+.custom-list {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0;
+    margin: 0;
+}
+
+.custom-list li {
+    position: relative;
+    padding-left: 20px; /* Space for the custom bullet */
+    margin-bottom: 10px; /* Spacing between list items */
+}
+
+.custom-list li::before {
+    content: '\2022'; /* Unicode for bullet */
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: black;
+    font-size: 20px; /* Adjust the bullet size */
+    line-height: 1; /* Align bullet with text */
+}
+
+.experience-item ul li{
+    font-size: 0.8em;
+}
+
+@media (max-width: 768px) {
+    .experience-item {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .experience-item {
+        flex: 1 1 100%;
+    }
+}
+/* end of experience CSS */
+
+
+
+
 /* Skill CSS */
 .skill-section {
     text-align: center;
@@ -179,6 +304,7 @@ button a:hover{
     flex-wrap: wrap;
     justify-content: center;
     gap: 4em;
+    margin-bottom: 20px;
 }
 
 .skill-box {
@@ -239,6 +365,7 @@ button a:hover{
 
 
 
+
 /* Certificate CSS */
 .certificate{
     background-color: #f6f7fc;
@@ -255,7 +382,8 @@ button a:hover{
 .certificate .header button{
     background-color: #FEDE3E;
     padding: 10px 20px;
-    color: #fff;
+    color: black;
+    font-size: 17px;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -290,10 +418,8 @@ button a:hover{
 
 .certificate .certificate-items .item img{
     width: 100%;
-    height: 270px;
-    object-fit: cover;
-    object-position: top;
-    border-radius: 10px 10px 20px 20px;
+    height: auto;
+    max-width: 100%;
 }
 
 .certificate .certificate-items .item .info{
@@ -318,6 +444,8 @@ button a:hover{
     font-size: 16px;
 }
 /* end Certificate CSS */
+
+
 
 
 /* PROJECTS SECTION */
@@ -434,29 +562,10 @@ button a:hover{
         max-width: 100%;
     }
 }
+/* END OF PJOJECT CSS */
 
 
 
-.about{
-    padding: 50px 85px;
-    display: flex;
-    align-items: center;
-    gap: 60px;
-}
-
-.about .left{
-    background-color: #deebee;
-    border-radius: 10px 10px 0 0;
-}
-
-.about .left img{
-    width: 440px;
-}
-
-.about .right p{
-    font-size: 16px;
-    margin-top: 30px;
-}
 
 
 
