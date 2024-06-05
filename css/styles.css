@@ -9,7 +9,7 @@ html{
 
 
 
-/* reset semua pengaturan supaya pembuatan border yang lain tidak terpengaru */
+/* RESET SEMUA PENGATURAN SUPAYA BORDER DAN PADDING YANG LAIN TIDAK TERPENGARUH */
 *{
     margin: 0;
     padding: 0;
@@ -20,7 +20,7 @@ html{
 
 
 
-/* CSS navigation */
+/* CSS NAVIGATION */
 a{
     text-decoration: none;
     color: #333;
@@ -96,22 +96,22 @@ nav button#menuButton{
     font-size: 24px;
     padding: 7px;
 }
-/* end of navigation CSS */
+/* END OF NAVIGATION CSS */
 
 
 
 
-/* CSS Home */
+/* CSS HOME */
 h5{
     font-size: 40px;
 }
 
 button a{
-    color: white ;
+    color: black ;
 }
 
 button a:hover{
-    color: black !important;
+    color: white !important;
 }
 
 .main{
@@ -159,12 +159,12 @@ button a:hover{
 .main .right img{
     width: 500px;
 }
-/* end of home CSS */
+/* END OF HOME CSS */
 
 
 
 
-/* CSS About */
+/* CSS ABOUT */
 .about{
     padding: 50px 85px;
     display: flex;
@@ -190,12 +190,12 @@ button a:hover{
     flex-direction: column;
     align-items: start;
 }
-/* enf of CSS About */
+/* END OF CSS ABOUT */
 
 
 
 
-/* Experience CSS */
+/* EXPERIENCE CSS */
 .experience-section {
     padding: 50px 85px;
     margin: 20px auto;
@@ -268,24 +268,12 @@ button a:hover{
 .experience-item ul li{
     font-size: 0.8em;
 }
-
-@media (max-width: 768px) {
-    .experience-item {
-        flex: 1 1 calc(50% - 20px);
-    }
-}
-
-@media (max-width: 480px) {
-    .experience-item {
-        flex: 1 1 100%;
-    }
-}
-/* end of experience CSS */
+/* END OF EXPERIENCE CSS */
 
 
 
 
-/* Skill CSS */
+/* SKILLS CSS */
 .skill-section {
     text-align: center;
 }
@@ -350,23 +338,12 @@ button a:hover{
     margin: 0;
     color: #777;
 }
-
-@media (max-width: 768px) {
-    .skill-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .skill-box {
-        max-width: 90%;
-    }
-}
-/* end of Skill CSS */
+/* END OF SKILLS CSS */
 
 
 
 
-/* Certificate CSS */
+/* CERTIFICATE CSS */
 .certificate{
     background-color: #f6f7fc;
     padding: 50px 85px;
@@ -398,8 +375,8 @@ button a:hover{
 
 .certificate .certificate-items{
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .certificate .certificate-items .item{
@@ -443,13 +420,12 @@ button a:hover{
     margin-left: 2px;
     font-size: 16px;
 }
-/* end Certificate CSS */
+/* END OF CERTIFICATE CSS */
 
 
 
 
 /* PROJECTS SECTION */
-
 #projects {
     padding: 50px 85px;
     box-sizing: border-box;
@@ -536,40 +512,325 @@ button a:hover{
 .project-btn:hover {
     background-color: #555;
 }
-
-
-@media (max-width: 1024px) {
-    #projects {
-        margin: 0 5rem;
-    }
-
-    .project-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .details-container {
-        max-width: 80%;
-    }
-}
-
-@media (max-width: 768px) {
-    #projects {
-        margin: 0 2rem;
-    }
-
-    .details-container {
-        max-width: 100%;
-    }
-}
 /* END OF PJOJECT CSS */
 
 
 
+/* FOOTHER CSS */
+footer {
+    background-color: #f6f7fc;
+    color: black;
+    padding: 50px 85px;;
+}
+
+footer .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer .logo {
+    display: flex;
+    align-items: center;
+}
+
+footer .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+footer ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+footer .social-links {
+    display: flex;
+    gap: 10px;
+}
+
+footer .social-links a {
+    color: black;
+    font-size: 24px;
+}
+
+footer .separator {
+    height: 1px;
+    background-color: #555;
+    margin: 20px 0;
+}
+
+footer .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+footer .bottom p {
+    margin: 0;
+}
+
+footer .links {
+    display: flex;
+    gap: 20px;
+}
+
+footer .message-us {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 20px auto;
+}
+
+footer .message-us h4 {
+    margin-bottom: 10px;
+}
+
+footer .message-us form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .message-us form label {
+    margin-bottom: 5px;
+}
+
+footer .message-us form input,
+footer .message-us form select,
+footer .message-us form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+footer .message-us form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #555;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer .message-us form button:hover {
+    background-color: #777;
+}
+/* END OF FOTHER CSS */
 
 
 
 
+/* MEDIA, UNTUK RESPONSIVE WEBSITE */
+@media screen and (max-width: 1200px) {
+    .main .left h5 {
+        font-size: 18px;
+    }
+
+    .main .left h3 {
+        font-size: 36px;
+    }
+
+    .main .left p {
+        font-size: 18px;
+    }
+
+    .main .right img {
+        width: 380px;
+    }
+
+    .skill-container .skill-box {
+        gap: 10px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .skill-container .skill-box .skill {
+        width: 49%;
+    }
+
+    .about .left img {
+        width: 370px;
+    }
+
+    .skill-section h3,
+    .about .right h3,
+    .certificate .header h3,
+    .experience-section h3 {
+        font-size: 32px;
+    }
+
+    .about .right p {
+        font-size: 15px;
+    }
+
+    .experience-section .experience-item .custom-list li {
+        font-size: 13px;
+    }
+
+    footer .top ul {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    nav button {
+        display: none;
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+
+    nav ul li a {
+        font-size: 15px;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .about {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .project-details-container {
+        gap: 22px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .project-details-container .details-container {
+        width: 48%;
+    }
+
+    .experience-section .experience-grid {
+        gap: 14px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .experience-section .experience-item {
+        width: 48%;
+    }
+
+    footer .top ul {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        justify-content: space-between;
+        padding: 0 42px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav.open .logo {
+        display: none;
+    }
+
+    nav.open ul {
+        display: flex;
+    }
+
+    nav button#menuButton {
+        display: flex;
+    }
+
+    .main {
+        padding: 42px;
+    }
+
+    .skill-section {
+        padding: 85px 42px 0;
+    }
+
+    .skill-container .skill-box {
+        gap: 8px;
+    }
+
+    .about {
+        padding: 85px 42px;
+    }
+
+    .certificate {
+        padding: 60px 42px;
+    }
+
+    .project {
+        padding: 60px 42px;
+    }
+
+    .project-details-container {
+        gap: 18px;
+    }
+
+    .experience-section {
+        padding: 85px 42px;
+    }
+
+    footer {
+        padding: 85px 42px;
+    }
+
+    footer .bottom {
+        flex-direction: column-reverse;
+        gap: 14px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    nav ul li a {
+        font-size: 13px;
+    }
+
+    nav .logo a {
+        font-size: 18px;
+    }
+
+    .main .left h3 {
+        font-size: 32px;
+    }
+
+    .main .left p {
+        font-size: 16px;
+    }
+
+    .main .left button {
+        width: 100%;
+    }
+
+    .skill-container .skill-box .skill {
+        width: 100%;
+    }
+
+    .certificate .header button {
+        font-size: 12px;
+        padding: 8px 14px;
+    }
+
+    .project-details-container .details-container {
+        width: 80%;
+    }
+
+    .experience-section .experience-item {
+        width: 100%;
+    }
+}
+/* END OF RESPONSIVE CSS */
 
 
 
